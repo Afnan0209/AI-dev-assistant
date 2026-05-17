@@ -1,7 +1,7 @@
 """Explanation router — POST /explanation/"""
 from fastapi import APIRouter
-from app.schemas import CodeRequest, ExplanationResponse
-from app.services.code_assistant import detect_language, run_explanation
+from ..schemas import CodeRequest, ExplanationResponse
+from ..services.code_assistant import detect_language, run_explanation
 
 router = APIRouter()
 

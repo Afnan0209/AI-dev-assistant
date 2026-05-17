@@ -1,7 +1,7 @@
 """Debugging router — POST /debugging/"""
 from fastapi import APIRouter
-from app.schemas import CodeRequest, DebuggingResponse
-from app.services.code_assistant import detect_language, run_bug_detection
+from ..schemas import CodeRequest, DebuggingResponse
+from ..services.code_assistant import detect_language, run_bug_detection
 
 router = APIRouter()
 

@@ -1,7 +1,7 @@
 """Full analysis router — POST /analyze/"""
 from fastapi import APIRouter
-from app.schemas import CodeRequest, AnalyzeResponse
-from app.services.code_assistant import full_analysis
+from ..schemas import CodeRequest, AnalyzeResponse
+from ..services.code_assistant import full_analysis
 
 router = APIRouter()
 

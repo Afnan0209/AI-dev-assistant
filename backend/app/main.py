@@ -13,8 +13,8 @@ import os
 from collections import defaultdict
 from contextlib import asynccontextmanager
 
-from app.routers import explanation, debugging, suggestions, analyze
-from app.schemas import HealthResponse
+from .routers import explanation, debugging, suggestions, analyze
+from .schemas import HealthResponse
 
 
 # ── Rate limiter (in-memory, per IP) ──────────────────────────────────────────
